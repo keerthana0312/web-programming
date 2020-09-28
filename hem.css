@@ -1,0 +1,41 @@
+body{
+    background-color: #212121;
+}
+nav{
+    background-color: #0d7377;
+}
+.heading{
+    margin-left: 50px;
+}
+.select{
+   // text-decoration: underline;
+    font-size: 23px;
+    font-weight: 600;
+    background-color: #212121;
+}
+
+.heading{
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.imageView{
+    width: 50%;
+    height: 50%;
+}
+@media screen and (max-width : 990px)
+{
+    .heading{
+        margin-left: 0px;
+    }
+    .select{
+        background-color: #212121;
+        color: white;
+        font-weight: 500;
+    }
+    .heading{
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+}

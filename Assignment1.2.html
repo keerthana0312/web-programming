@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DAY OF THE WEEK</title>
+    </head>
+    
+    <body>
+       
+        <script>
+          var now= new Date()
+          var dow= now.getDay();
+          var hod = now.getHours();
+
+          switch(dow){
+                  
+             case 0: document.write("<img src='assests/img/sun.jpg'    alt='sunday'    style='width:170px'><br>"); break;
+             case 1: document.write("<img src='assests/img/mon.jpg'    alt='monday'    style='width:170px'><br>"); break;
+             case 2: document.write("<img src='assests/img/tues.jpg'   alt='tuesday'   style='width:170px'><br>"); break;
+             case 3: document.write("<img src='assests/img/wednes.jpg' alt='wednesday' style='width:170px'><br>"); break;
+             case 4: document.write("<img src='assests/img/thurs.jpg'  alt='thursday'  style='width:170px'><br>"); break;
+             case 5: document.write("<img src='assests/img/fri.jpg'    alt='friday'    style='width:170px'><br>"); break;
+             case 6: document.write("<img src='assests/img/satur.jpg'  alt='saturday'  style='width:170px'><br>");
+
+            }
+            
+            if(hod>=0 && hod<12)
+                document.write("   Hello there, Good morning!!");
+            if(hod>=12 && hod<16)
+                document.write("Hello there, Good afternoon!!");
+            if(hod>=16)
+                document.write("Hello there, Good evening!!");
+
+        </script>
+        
+        <p id="demo">Change in styles using random.</p>
+        
+        <script>
+            var week = new Array(7);
+                week[0] = "#6a2c70";
+                week[1] = "#f08a5d";
+                week[2] = "#a5ecd7";
+                week[3] = "#51adcf";
+                week[4] = "#212121";
+                week[5] = "#625261";
+                week[6] = "#ff414d";
+            var cs = Math.floor(Math.random() * 8); 
+            document.getElementById('demo').style.setProperty('color',week[cs]);
+        </script>
+        
+    </body>
+</html>
